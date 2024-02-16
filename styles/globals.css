@@ -1,0 +1,450 @@
+/* html,
+body {
+  min-height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Public Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+code[class*='language-'] {
+  padding: 0;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100%;
+}
+/* screen loader style */
+/* spinner loader style */
+.loader {
+  display: inline-block;
+  width: 220px; /* Adjust based on image size + padding */
+  height: 220px; /* Adjust based on image size + padding */
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #1852fe; /* Color of the loader */
+  animation: spin 2s linear infinite;
+}
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Account styling start */
+#modal-content {
+  position: relative;
+  height: 100%;
+}
+/* Account styling end */
+
+.loaderimg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Public Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+code[class*='language-'] {
+  padding: 0;
+}
+
+/* -------------------------- */
+/* scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(128, 128, 128, 0.39);
+}
+::-webkit-scrollbar-thumb {
+  /* background-color: rgba(95, 75, 184, 0.685); */
+  background-color: #1852fe !important;
+  border-radius: 10px;
+}
+/*end scrollbar styling  */
+
+/* fixing drawer and table on top */
+.layout-navbar {
+  z-index: 100 !important;
+}
+.MuiDrawer-paperAnchorDockedLeft {
+  z-index: 100 !important;
+}
+/* .css-11ui1ji-MuiDrawer-docked {
+  z-index: 100 !important;
+}
+.css-lbheh4-MuiDrawer-docked {
+  z-index: 100 !important;
+}
+.css-1omsxfb-MuiPaper-root-MuiAppBar-root {
+  z-index: 100 !important;
+} */
+.css-34b9xr {
+  z-index: 110 !important;
+}
+.custom-scrollbar
+  .MuiPaper-root
+  MuiPaper-elevation
+  MuiPaper-rounded
+  MuiPaper-elevation2
+  css-186vso5-MuiPaper-root {
+  color: #28c76f !important;
+  background-color: rgba(40, 199, 111, 0.16) !important;
+  border-radius: 0 !important;
+  font-size: 0.9rem !important;
+  z-index: 120 !important;
+}
+/* .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation2 {
+  z-index:9 !important;
+  padding: 10px !important;
+} */
+/* end fixing drawer and table on top */
+
+/* scrollbar table */
+/* Customizing scrollbar for Chrome, Safari, and Edge */
+.MuiTableContainer-root::-webkit-scrollbar {
+  height: 8px;
+}
+.MuiTableContainer-root::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 15px;
+}
+
+/* Customizing scrollbar for Firefox */
+.MuiTableContainer-root {
+  scrollbar-width: thin;
+  scrollbar-color: darkgrey #f1f1f1;
+}
+
+.custom-child-table .MuiDataGrid-root {
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.custom-child-table .MuiDataGrid-cell {
+  padding: 1px 4px; /* Reduced cell padding */
+}
+
+.custom-child-table .MuiDataGrid-cfmodalolumnHeader {
+  padding: 2px 3px; /* Reduced column header padding */
+}
+
+/* track status styles */
+.track-status-styles {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 384px;
+  justify-content: space-between;
+}
+/* MenuItem form scroll */
+.MuiButtonBase-root::-webkit-scrollbar {
+  height: 4px;
+}
+/* table filter icon color */
+.css-1buxjf4-MuiSvgIcon-root {
+  color: #1852fe;
+}
+
+/* component bg */
+.css-1ewxx0h-MuiPaper-root-MuiAppBar-root {
+  /* background: #dbe5fb; */
+}
+
+/* vertical nav styles start */
+.child-items > .nav-link {
+  height: 28px;
+}
+.css-159dz94-MuiModal-root-MuiDrawer-root {
+  left: 78px;
+}
+.child-items > .nav-link:hover {
+  border: 'solid';
+}
+.hello
+  > .css-smkl36-MuiCollapse-wrapper
+  > .css-9l5vo-MuiCollapse-wrapperInner
+  > .child-items
+  > .css-1esf9fq-MuiListItem-root
+  > .css-ehlsdq-MuiButtonBase-root-MuiListItemButton-root
+  > .css-164kvcj
+  > .css-185anww-MuiTypography-root {
+  font-size: 13.5px;
+}
+
+.hello
+  > .css-smkl36-MuiCollapse-wrapper
+  > .css-9l5vo-MuiCollapse-wrapperInner
+  > .child-items
+  > .css-1p8mho2-MuiListItem-root
+  > .css-hm90hx-MuiButtonBase-root-MuiListItemButton-root
+  > .css-1w9dm8e-MuiListItemIcon-root
+  > svg {
+  font-size: 10.5px;
+}
+.hello
+  > .css-smkl36-MuiCollapse-wrapper
+  > .css-9l5vo-MuiCollapse-wrapperInner
+  > .child-items
+  > .css-1p8mho2-MuiListItem-root
+  > .css-hm90hx-MuiButtonBase-root-MuiListItemButton-root
+  > .css-164kvcj
+  > p {
+  font-size: 13.5px;
+}
+.hello
+  > .css-smkl36-MuiCollapse-wrapper
+  > .css-9l5vo-MuiCollapse-wrapperInner
+  > .child-items
+  > .css-1esf9fq-MuiListItem-root
+  > .css-ehlsdq-MuiButtonBase-root-MuiListItemButton-root
+  > .css-spdbyg
+  p {
+  font-size: 13.5px;
+}
+/* dark mode vertical nav styles start*/
+.css-1i0jf2v-MuiListItemIcon-root svg {
+  font-size: 10.5px;
+}
+.child-items
+  > .nav-links
+  > .css-1xlhu8s-MuiButtonBase-root-MuiListItemButton-root
+  > .css-1uzxa8w-MuiListItemIcon-root
+  svg
+  g {
+  /* border: 2px solid red; */
+}
+.css-5itjrg-MuiModal-root-MuiDrawer-root {
+  z-index: '';
+}
+.css-159dz94-MuiModal-root-MuiDrawer-root {
+  z-index: 10000;
+}
+.css-1uzxa8w-MuiListItemIcon-root svg {
+  font-size: 10.5px !important;
+  color: #1852fe !important;
+}
+.child-items
+  > .nav-links
+  > .css-1xlhu8s-MuiButtonBase-root-MuiListItemButton-root
+  > .css-sx7ign-MuiTypography-root {
+  font-size: 13.5px;
+}
+.css-1xlhu8s-MuiButtonBase-root-MuiListItemButton-root.active {
+  height: 28px;
+}
+.css-spdbyg > .css-185anww-MuiTypography-root {
+  font-size: 10.5px;
+}
+.css-ehlsdq-MuiButtonBase-root-MuiListItemButton-root.active {
+  height: 28px;
+}
+.css-ehlsdq-MuiButtonBase-root-MuiListItemButton-root.active {
+  height: 28px;
+}
+
+/* app bar styles start */
+.css-pr8bgq-MuiToolbar-root {
+  box-shadow: none;
+}
+
+/* Sub Menu styles */
+
+.css-16pbco9-MuiListItemIcon-root svg {
+  font-size: 10px !important;
+  color: blue !important;
+}
+/* sidepanel */
+.css-185anww-MuiTypography-root {
+  color: black !important;
+}
+
+/* dropdown styles */
+.css-kvmkal-MuiPaper-root-MuiMenu-paper-MuiPopover-paper {
+  box-shadow: 0px 0px 3px -1px;
+}
+
+/* invoices styles */
+.MuiAutocomplete-hasPopupIcon.css-14xg4mo-MuiAutocomplete-root .MuiOutlinedInput-root,
+.MuiAutocomplete-hasClearIcon.css-14xg4mo-MuiAutocomplete-root .MuiOutlinedInput-root {
+  height: 36px;
+}
+.css-1pa8pj7-MuiTableRow-root {
+  text-transform: lowercase;
+}
+
+/* invoice print styles start */
+.css-1pa8pj7-MuiTableRow-root
+  .MuiTableCell-head:not(.MuiTableCell-paddingCheckbox):first-child,
+.css-1pa8pj7-MuiTableRow-root
+  .MuiTableCell-root:not(.MuiTableCell-paddingCheckbox):first-child {
+  /* padding-left: 1.5rem; */
+  letter-spacing: 0px;
+}
+/* invoice print styles stopped */
+.css-1ej5bwj-MuiTableHead-root .MuiTableCell-head {
+  padding: 7px;
+  padding-left: 0px;
+  letter-spacing: 0px;
+}
+.css-18fbx67-MuiFormLabel-root-MuiInputLabel-root {
+  top: -9px;
+}
+/* visa booking forms styles */
+.css-1oi89t9-MuiButtonBase-root-MuiMenuItem-root:not(.Mui-focusVisible):hover {
+  color: #1852fe;
+  background-color: rgb(24 82 254 / 8%);
+  border-radius: 0px;
+  border-bottom: 1px solid rgb(24 82 254 / 19%);
+}
+.css-16pbco9-MuiListItemIcon-root svg {
+  font-size: 10px;
+  color: blue;
+}
+/* date input field styles */
+.inputdate
+  .css-1lxcjy7-MuiInputBase-root-MuiOutlinedInput-root:not(.MuiInputBase-sizeSmall) {
+  height: 40px !important;
+}
+
+/* track status styling start */
+.css-1eeur4k {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+.css-1nwm8s6 {
+  margin-top: 1rem;
+  width: 68%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px -2px gray;
+  padding: 40px;
+}
+/* track status styles end */
+
+/* app icons styles */
+.css-1buxjf4-MuiSvgIcon-root {
+  color: #afb3cf;
+}
+
+/* .media-drawer styles */
+.media-drawer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+}
+.css-161j9ok-MuiTreeView-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.media-image {
+  /* box-shadow: 0px 0px 6px 1px rgb(226, 224, 224); */
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.media-img-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.tooltip {
+  position: absolute;
+  bottom: 100%; /* Position it above the container */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  white-space: nowrap;
+  pointer-events: none; /* Allow interactions with elements beneath the tooltip */
+}
+
+.media-img-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.node-images {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.css-r1nnr0-MuiTreeItem-content .MuiTreeItem-label {
+  font-weight: 600;
+}
+.node-images .css-9l5vo-MuiCollapse-wrapperInner {
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.css-r1nnr0-MuiTreeItem-content.Mui-selected {
+  background-color: white !important;
+}
+.css-161j9ok-MuiTreeView-root {
+  display: block;
+}
+.media-doc-icon {
+  color: #625b5b;
+}
+.media-doc-icon:hover {
+  color: #1852fe;
+}
